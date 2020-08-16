@@ -1,0 +1,4 @@
+if(NOT TARGET ::header)
+  list(INSERT CMAKE_MODULE_PATH 0 /@_INSTALL_CONFDIR@)
+  include(-exports)
+endif()
