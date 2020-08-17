@@ -1,6 +1,7 @@
 configure_file(config.hpp.in config.hpp)
 
 add_library(polynomial_header INTERFACE)
+set_target_properties(polynomial_header PROPERTIES EXPORT_NAME header)
 target_include_directories(polynomial_header
   INTERFACE
   $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}>
@@ -22,5 +23,5 @@ install(FILES
 
 install(DIRECTORY details
   DESTINATION ${polynomial_INSTALL_INCLUDEDIR}/polynomial
-  PATTERN "*.hpp")
+  FILES_MATCHING PATTERN "*.hpp")
 
