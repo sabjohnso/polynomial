@@ -1,6 +1,6 @@
 #pragma once
 
-namespace polynomial::Config
+namespace Polynomial::Config
 {
   struct Info {
     static constexpr char name[] = ${PROJECT_NAME};
@@ -29,4 +29,4 @@ namespace polynomial::Config
       }
     };
   };
-} // end of namespace polynomial::Config
+} // end of namespace Polynomial::Config

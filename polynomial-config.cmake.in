@@ -1,4 +1,4 @@
-if(NOT TARGET ::header)
-  list(INSERT CMAKE_MODULE_PATH 0 /@_INSTALL_CONFDIR@)
-  include(-exports)
+if(NOT TARGET polynomial::header)
+  list(INSERT CMAKE_MODULE_PATH 0 @CMAKE_INSTALL_PREFIX@/@polynomial_INSTALL_CONFDIR@)
+  include(polynomial-exports)
 endif()
